@@ -83,16 +83,16 @@
                 <nav id="primary-menu">
 
                     <ul class="one-page-menu">
-                        <li><a href="#" data-href="#section-us">
+                        <li><a href="#" data-href="#section-nosotros">
                                 <div>Nosotros</div>
                             </a></li>
-                        <li><a href="#" data-href="#section-pricing">
-                                <div>Precios</div>
+                        <li><a href="#" data-href="#section-beneficios">
+                                <div>Beneficios</div>
                             </a></li>
-                        <li><a href="#" data-href="#section-testimonials">
-                                <div>Testimonios</div>
+                        <li><a href="#" data-href="#section-siniestro">
+                                <div>Siniestro</div>
                             </a></li>
-                        <li><a href="#" data-href="#section-buy">
+                        <li><a href="#" data-href="#section-contrato">
                                 <div>Contratanos</div>
                             </a></li>
                     </ul>
@@ -186,44 +186,47 @@
 
     <section id="content" style="overflow: visible;">
 
-        <div class="content-wrap">
+        <div class="content-wrap nobottompadding">
             <div class="promo promo-full header-stick promo-light">
                 <div class="container clearfix">
                     <h3>Te ayudamos a cotizar tu auto</h3>
                     <span>Mejoramos cualquier cotización con las mejores aseguradoras del país.</span>
                 </div>
             </div>
-            <div class="container clearfix" style="margin-top: 30px">
-                <div class="col_one_third">
-                    <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                        <h4>Why choose <span>Us</span>.</h4>
-                    </div>
-                    <p>
-                        Asegurar tu auto nunca había sido tan sencillo, fácil y a un costo accesible, en AhorraSeguros® Comparamos más de 19 aseguradoras por ti,
-                        te asesoramos desde la contratación de tu Seguro de auto y durante toda la vida de tu póliza. Estaremos para ti cuando necesites hacer un
-                        trámite o incluso ampliar tu cobertura. Siempre atendiéndote de manera personalizada y eficaz.
-                    </p>
 
-                </div>
-                <div class="col_one_third">
-                    <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                        <h4>Our <span>Mission</span>.</h4>
+            <div class="section nomargin nobottompadding nobgcolor" id="section-nosotros">
+                <div class="container clearfix">
+                    <div class="fancy-title title-center title-border-color">
+                        <h3>Te ayudamos a <span>cotizar</span> tu Seguro de auto</h3>
                     </div>
-                    <p>Tomamos en cuenta tu edad, la zona donde circulas y los datos de tu auto para buscar las mejores opciones en Seguros de autos con los mejores planes y coberturas a un costo accesible. ¡Comparamos por ti 19 aseguradoras de auto de manera rápida y sencilla para que tú no lo hagas! Al Cotizar con AhorraSeguros® El mejor Cotizador de Seguros de Autos en México te ofrece los siguientes beneficios.</p>
-                </div>
-                <div class="col_one_third col_last">
-                    <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                        <h4>What we <span>Do</span>.</h4>
+                    <div class="col_one_third">
+                        <p class="text-justify">
+                            Asegurar tu auto nunca había sido tan sencillo, fácil y a un costo accesible, en AhorraSeguros® Comparamos más de 19 aseguradoras por ti,
+                            te asesoramos desde la contratación de tu Seguro de auto y durante toda la vida de tu póliza. Estaremos para ti cuando necesites hacer un
+                            trámite o incluso ampliar tu cobertura. Siempre atendiéndote de manera personalizada y eficaz.
+                        </p>
                     </div>
-                    <p>Fácil contratación
-                        Un Asesor 100% profesional te contactará en menos de 1min al dejar tus datos
-                        19 Aseguradoras de Auto (Somos el único agente con más aseguradoras en México)
-                        Precios accesibles y descuentos exclusivos en Seguros de autos
-                        Aceptamos tarjetas de crédito: Visa, MasterCard, Amex. *Consulta términos con tu asesor
-                        Aseguramos tu auto de manera inmediata sin necesidad de trámites extensos y papeleos.
-                        Te brindamos asesoría en un siniestro y te canalizamos con áreas especiales</p>
+                    <div class="col_one_third center">
+                        <img src="<?php echo cdn_assets();?>images/landing/trato.png" class=""/>
+                    </div>
+                    <div class="col_one_third col_last">
+                        <p class="text-justify">
+                            Tomamos en cuenta tu edad, la zona donde circulas y los datos de tu auto para buscar las mejores opciones en Seguros de autos con los mejores
+                            planes y coberturas a un costo accesible. ¡Comparamos por ti 19 aseguradoras de auto de manera rápida y sencilla para que tú no lo hagas!
+                            Al Cotizar con AhorraSeguros® El mejor Cotizador de Seguros de Autos en México te ofrece los siguientes beneficios.
+                        </p>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <a class="button button-full button-dark center tright nomargin" id="section-beneficios">
+            <div class="container clearfix">
+                ¿Te hemos convencido? Contratanos ahora <strong>55049384950</strong> <i class="icon-phone" style="top:4px;"></i>
+            </div>
+        </a>
+
+        <div class="content-wrap notoppadding">
             <div class="section nomargin">
                 <div class="container clearfix">
 
@@ -253,14 +256,102 @@
 
                 </div>
             </div>
+
+            <div class="section nomargin nobgcolor" id="section-siniestro">
+                <div class="container clearfix">
+                    <div class="fancy-title title-border-color title-center">
+                        <h3>¿Qué hacer en caso de un <span>siniestro</span>?</h3>
+                    </div>
+                    <div class="col_full common-height">
+                        <div class="col_two_third ">
+                            <div class="panel panel-danger">
+                                <div class="panel-body">
+                                    Si ya contrataste Seguros de autos en AhorraSeguros® y sufres cualquier evento que te ponga en riesgo a ti o a tu auto, ya sea un choque, colisión, robo de autoparte, etc.
+                                    Te brindamos los siguientes consejos: Conserva la calma, Ayuda a otras personas en caso de estar heridas, Avisa a las fuerzas de seguridad más cercanas, En caso de cualquier
+                                    tipo de robo evita cualquier riesgo y mantén la calma. Comunicate a AhorraSeguros® mantén a la mano tu número de póliza para reportar tu siniestro y nosotros trasladaremos
+                                    tu caso al área especialista en siniestros de la aseguradora con la que decidiste contratar tu seguro de auto, o de lo contrario ponte en contacto con los teléfonos que te
+                                    proporcionaremos a continuación.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_one_third col_last">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <h4 class="nomargin">AXA Seguros <span>55483728394</span></h4>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="nomargin">AXA Seguros <span>55483728394</span></h4>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="nomargin">AXA Seguros <span>55483728394</span></h4>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="nomargin">AXA Seguros <span>55483728394</span></h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <section id="content2">
-        <div class="content-wrap">
+    <footer id="footer" class="dark">
 
-        </div>
-    </section>
+        <!-- Copyrights
+        ============================================= -->
+        <div id="copyrights">
+
+            <div class="container clearfix">
+
+                <div class="col_half">
+                    <img src="images/footer-logo.png" alt="" class="footer-logo">
+                    Copyrights © 2014 All Rights Reserved by Canvas Inc.
+                </div>
+
+                <div class="col_half col_last tright">
+                    <div class="copyrights-menu copyright-links fright clearfix">
+                        <a href="#">Inicio</a>/<a href="#section-nosotros">Nosotros</a>/<a href="#section-beneficios">Beneficios</a>/<a href="#section-siniestro">Siniestro</a>/<a href="#section-contratanos">Contratanos</a>
+                    </div>
+                    <div class="fright clearfix">
+                        <a href="#" class="social-icon si-small si-borderless nobottommargin si-facebook">
+                            <i class="icon-facebook"></i>
+                            <i class="icon-facebook"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless nobottommargin si-twitter">
+                            <i class="icon-twitter"></i>
+                            <i class="icon-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon si-small si-borderless nobottommargin si-facebook">
+                            <i class="icon-facebook"></i>
+                            <i class="icon-facebook"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless nobottommargin si-twitter">
+                            <i class="icon-twitter"></i>
+                            <i class="icon-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon si-small si-borderless nobottommargin si-facebook">
+                            <i class="icon-facebook"></i>
+                            <i class="icon-facebook"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless nobottommargin si-twitter">
+                            <i class="icon-twitter"></i>
+                            <i class="icon-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div><!-- #copyrights end -->
+
+    </footer>
+
+
 </div>
 
 <div id="gotoTop" class="icon-angle-up"></div>
