@@ -74,12 +74,10 @@
                 <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
                 <div id="logo">
-                    <a href="index.html" class="standard-logo"
-                       data-dark-logo="<?php echo cdn_assets(); ?>images/logo-dark.png"><img
-                                src="<?php echo cdn_assets(); ?>images/logo.png" alt="Canvas Logo"></a>
-                    <a href="index.html" class="retina-logo"
-                       data-dark-logo="<?php echo cdn_assets(); ?>images/logo-dark@2x.png"><img
-                                src="<?php echo cdn_assets(); ?>images/logo@2x.png" alt="Canvas Logo"></a>
+                    <a href="<?php echo base_url_lang();?>" class="standard-logo"><img
+                                src="<?php echo cdn_assets(); ?>images/logo.png" alt="SegurAutos"></a>
+                    <a href="<?php echo base_url_lang();?>" class="retina-logo"><img
+                                src="<?php echo cdn_assets(); ?>images/logo 2x.png" alt="SegurAutos"></a>
                 </div>
 
                 <nav id="primary-menu">
