@@ -220,14 +220,14 @@
             </div>
         </div>
 
-        <a class="button button-full button-dark center tright nomargin" id="section-beneficios">
+        <a class="button button-full button-dark center tright nomargin" id="section-beneficios" href="#" data-scrollTo="#section-contrato">
             <div class="container clearfix">
                 ¿Te hemos convencido? Contratanos ahora <strong>55049384950</strong> <i class="icon-phone" style="top:4px;"></i>
             </div>
         </a>
 
-        <div class="content-wrap notoppadding">
-            <div class="section nomargin">
+        <div class="content-wrap nopadding">
+            <div class="section dark nomargin" style="background-image: url('<?php echo cdn_assets();?>images/testimonials/parallax.jpg'); background-attachment: fixed;">
                 <div class="container clearfix">
 
                     <div class="col_one_fourth nobottommargin center" data-animate="bounceIn">
@@ -263,7 +263,7 @@
                         <h3>¿Qué hacer en caso de un <span>siniestro</span>?</h3>
                     </div>
                     <div class="col_full common-height">
-                        <div class="col_two_third ">
+                        <div class="col_two_third nobottommargin">
                             <div class="panel panel-danger">
                                 <div class="panel-body">
                                     Si ya contrataste Seguros de autos en AhorraSeguros® y sufres cualquier evento que te ponga en riesgo a ti o a tu auto, ya sea un choque, colisión, robo de autoparte, etc.
@@ -274,7 +274,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col_one_third col_last">
+                        <div class="col_one_third col_last nobottommargin">
                             <div class="list-group">
                                 <a href="#" class="list-group-item">
                                     <h4 class="nomargin">AXA Seguros <span>55483728394</span></h4>
@@ -294,6 +294,78 @@
                 </div>
             </div>
 
+            <div class="section nomargin" id="section-contrato">
+                <div class="container clearfix">
+                    <form action="include/landing-5.php" method="post" role="form"
+                          class="nobottommargin">
+                        <div class="heading-block nobottommargin nobottomborder">
+                            <h2>Cotiza ahora</h2>
+                            <span>Llena los campos para solicitar una cotización</span><span>(* Campo Obligatorio)</span>
+                        </div>
+                        <div class="line" style="margin: 20px 0 30px;"></div>
+                        <div class="col_half">
+                            <div class="col_half">
+                                <input type="text" name="landing-nombre" class="form-control required input-lg not-dark"
+                                       value="" placeholder="Nombre*">
+                            </div>
+                            <div class="col_half col_last">
+                                <input type="text" name="landing-apellidos"
+                                       class="form-control required input-lg not-dark" value=""
+                                       placeholder="Apellidos*">
+                            </div>
+                            <div class="col_half">
+                                <input type="text" name="landing-tel" class="form-control required input-lg not-dark"
+                                       value="" placeholder="Telefono*">
+                            </div>
+                            <div class="col_half col_last">
+                                <input type="email" name="landing-email" class="form-control required input-lg not-dark"
+                                       value="" placeholder="Correo Electrónico*">
+                            </div>
+                            <div class="col_half">
+                                <input type="text" name="landing-genero" class="form-control required input-lg not-dark"
+                                       value="" placeholder="Genero*">
+                            </div>
+                            <div class="col_half col_last">
+                                <input type="email" name="landing-nacimiento"
+                                       class="form-control required input-lg not-dark" value=""
+                                       placeholder="Fecha de Nacimiento*">
+                            </div>
+                        </div>
+                        <div class="col_half col_last">
+                            <div class="col_half">
+                                <input type="text" name="landing-cp" class="form-control required input-lg not-dark"
+                                       value="" placeholder="Codigo Postal*">
+                            </div>
+                            <div class="col_half col_last">
+                                <input type="text" name="landing-modelo" class="form-control required input-lg not-dark"
+                                       value="" placeholder="Modelo (Año)*">
+                            </div>
+                            <div class="col_half">
+                                <input type="text" name="landing-marca" class="form-control required input-lg not-dark"
+                                       value="" placeholder="Marca*">
+                            </div>
+                            <div class="col_half col_last">
+                                <input type="text" name="landing-submarca"
+                                       class="form-control required input-lg not-dark" value="" placeholder="Submarca*">
+                            </div>
+                            <div class="col_half">
+                                <input type="text" name="landing-version"
+                                       class="form-control required input-lg not-dark" value="" placeholder="Versión">
+                            </div>
+                            <div class="col_full hidden">
+                                <input type="text" id="landing-botcheck" name="landing-botcheck" value=""
+                                       class="form-control"/>
+                            </div>
+                            <div class="col_half col_last">
+                                <button class="btn btn-lg btn-block btn-success nomargin" value="submit" type="submit"
+                                        style="">Cotizar ahora
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -301,19 +373,16 @@
 
         <!-- Copyrights
         ============================================= -->
-        <div id="copyrights">
+        <div id="copyrights" style="padding-top:20px">
 
             <div class="container clearfix">
 
-                <div class="col_half">
-                    <img src="images/footer-logo.png" alt="" class="footer-logo">
+                <div class="col_two_third nobottommargin">
+                    <img src="<?php echo cdn_assets();?>images/footer-logo.png" alt="" class="footer-logo nomargin">
                     Copyrights © 2014 All Rights Reserved by Canvas Inc.
                 </div>
 
-                <div class="col_half col_last tright">
-                    <div class="copyrights-menu copyright-links fright clearfix">
-                        <a href="#">Inicio</a>/<a href="#section-nosotros">Nosotros</a>/<a href="#section-beneficios">Beneficios</a>/<a href="#section-siniestro">Siniestro</a>/<a href="#section-contratanos">Contratanos</a>
-                    </div>
+                <div class="col_one_third col_last tright nobottommargin">
                     <div class="fright clearfix">
                         <a href="#" class="social-icon si-small si-borderless nobottommargin si-facebook">
                             <i class="icon-facebook"></i>
@@ -324,24 +393,7 @@
                             <i class="icon-twitter"></i>
                             <i class="icon-twitter"></i>
                         </a>
-                        <a href="#" class="social-icon si-small si-borderless nobottommargin si-facebook">
-                            <i class="icon-facebook"></i>
-                            <i class="icon-facebook"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-small si-borderless nobottommargin si-twitter">
-                            <i class="icon-twitter"></i>
-                            <i class="icon-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon si-small si-borderless nobottommargin si-facebook">
-                            <i class="icon-facebook"></i>
-                            <i class="icon-facebook"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-small si-borderless nobottommargin si-twitter">
-                            <i class="icon-twitter"></i>
-                            <i class="icon-twitter"></i>
-                        </a>
+                        <a href="#" style="top:2px;position:relative; color: #AAA;"><i class="icon-phone"></i>4938493849</a>
                     </div>
                 </div>
 
