@@ -3,6 +3,11 @@
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title><?php echo trans_line('title_tag'); ?></title>
+
+    <meta name="keywords" content="<?php echo trans_line('metatag_keywords'); ?>"/>
+    <meta name="description" content="<?php echo trans_line('metatag_desc'); ?>">
+    <meta name="author" content="icognitis.com">
 
     <!-- Stylesheets
     ============================================= -->
@@ -17,11 +22,8 @@
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/responsive.css" type="text/css"/>
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/custom.css" type="text/css"/>
 
+    <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/components/bs-select.css" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-    <!-- Document Title
-    ============================================= -->
-    <title><?php echo trans_line('title_tag'); ?></title>
 
 </head>
 
@@ -74,9 +76,9 @@
                 <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
                 <div id="logo">
-                    <a href="<?php echo base_url_lang();?>" class="standard-logo"><img
+                    <a href="<?php echo base_url_lang(); ?>" class="standard-logo"><img
                                 src="<?php echo cdn_assets(); ?>images/logo.png" alt="SegurAutos"></a>
-                    <a href="<?php echo base_url_lang();?>" class="retina-logo"><img
+                    <a href="<?php echo base_url_lang(); ?>" class="retina-logo"><img
                                 src="<?php echo cdn_assets(); ?>images/logo 2x.png" alt="SegurAutos"></a>
                 </div>
 
@@ -112,10 +114,10 @@
 
                 <div class="col_full">
                     <form action="include/landing-5.php" method="post" role="form"
-                          class="landing-wide-form landing-form-overlay dark nobottommargin clearfix">
+                          class="landing-wide-form landing-form-overlay nobottommargin clearfix">
                         <div class="heading-block nobottommargin nobottomborder">
-                            <h2>Cotiza ahora</h2>
-                            <span>Llena los campos para solicitar una cotización (* Campo Obligatorio)</span>
+                            <h2 style="color: #FFF;">Cotiza ahora</h2>
+                            <span style="color: #FFF;">Llena los campos para solicitar <br>una cotización (* Campo Obligatorio)</span>
                         </div>
                         <div class="line" style="margin: 20px 0 30px;"></div>
                         <div class="col_half">
@@ -152,16 +154,29 @@
                                        value="" placeholder="Codigo Postal*">
                             </div>
                             <div class="col_half col_last">
-                                <input type="text" name="landing-modelo" class="form-control required input-lg not-dark"
-                                       value="" placeholder="Modelo (Año)*">
+                                <select class="selectpicker form-control required" name="landing-modelo"
+                                        data-live-search="true" data-live-search-placeholder="Modelo (Año)*"
+                                        data-size="5" title="Modelo (Año)*">
+                                    <?php for ($i = 1980; $i <= date("Y") + 1; $i++): ?>
+                                        <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                    <?php endfor; ?>
+                                </select>
                             </div>
                             <div class="col_half">
-                                <input type="text" name="landing-marca" class="form-control required input-lg not-dark"
-                                       value="" placeholder="Marca*">
+                                <select class="selectpicker form-control required" name="landing-marca"
+                                        data-live-search="true" data-live-search-placeholder="Marca*"
+                                        data-size="5" title="Marca*" id="marcas">
+                                    <?php foreach ($marcas as $marca): ?>
+                                        <option value="<?php echo $marca->idmarcas; ?>"><?php echo $marca->nombre; ?></option>
+                                    <?php endforeach; ?>
+                                </select>
                             </div>
                             <div class="col_half col_last">
-                                <input type="text" name="landing-submarca"
-                                       class="form-control required input-lg not-dark" value="" placeholder="Submarca*">
+                                <select class="selectpicker form-control required" name="landing-submarca"
+                                        data-live-search="true" data-live-search-placeholder="Submarca*"
+                                        data-size="5" title="Submarca*" id="submarcas">
+                                    <option>-Seleccionar-</option>
+                                </select>
                             </div>
                             <div class="col_half">
                                 <input type="text" name="landing-version"
@@ -189,8 +204,10 @@
         <div class="content-wrap nobottompadding">
             <div class="promo promo-full header-stick promo-light">
                 <div class="container clearfix">
-                    <h3>Te ayudamos a cotizar tu auto</h3>
-                    <span>Mejoramos cualquier cotización con las mejores aseguradoras del país.</span>
+                    <h2 style="margin: 0px !important;">El mejor cotizador de seguros para autos</h2>
+                    <span>Mejoramos cualquier cotización con las mejores aseguradoras del país. Somos la mejor opción para tu seguridad, comprueba nuestra calidad.</span>
+                    <br />
+                    <img src="<?php echo cdn_assets();?>images/landing/marcas.png">
                 </div>
             </div>
 
@@ -201,56 +218,73 @@
                     </div>
                     <div class="col_one_third">
                         <p class="text-justify">
-                            Asegurar tu auto nunca había sido tan sencillo, fácil y a un costo accesible, en AhorraSeguros® Comparamos más de 19 aseguradoras por ti,
-                            te asesoramos desde la contratación de tu Seguro de auto y durante toda la vida de tu póliza. Estaremos para ti cuando necesites hacer un
-                            trámite o incluso ampliar tu cobertura. Siempre atendiéndote de manera personalizada y eficaz.
+                            Asegurar tu auto nunca había sido tan sencillo, fácil y a un costo accesible, en
+                            AhorraSeguros® Comparamos más de 19 aseguradoras por ti,
+                            te asesoramos desde la contratación de tu Seguro de auto y durante toda la vida de tu
+                            póliza. Estaremos para ti cuando necesites hacer un
+                            trámite o incluso ampliar tu cobertura. Siempre atendiéndote de manera personalizada y
+                            eficaz.
                         </p>
                     </div>
                     <div class="col_one_third center">
-                        <img src="<?php echo cdn_assets();?>images/landing/trato.png" class=""/>
+                        <img src="<?php echo cdn_assets(); ?>images/landing/trato.png" class=""/>
                     </div>
                     <div class="col_one_third col_last">
                         <p class="text-justify">
-                            Tomamos en cuenta tu edad, la zona donde circulas y los datos de tu auto para buscar las mejores opciones en Seguros de autos con los mejores
-                            planes y coberturas a un costo accesible. ¡Comparamos por ti 19 aseguradoras de auto de manera rápida y sencilla para que tú no lo hagas!
-                            Al Cotizar con AhorraSeguros® El mejor Cotizador de Seguros de Autos en México te ofrece los siguientes beneficios.
+                            Tomamos en cuenta tu edad, la zona donde circulas y los datos de tu auto para buscar las
+                            mejores opciones en Seguros de autos con los mejores
+                            planes y coberturas a un costo accesible. ¡Comparamos por ti 19 aseguradoras de auto de
+                            manera rápida y sencilla para que tú no lo hagas!
+                            Al Cotizar con AhorraSeguros® El mejor Cotizador de Seguros de Autos en México te ofrece los
+                            siguientes beneficios.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <a class="button button-full button-dark center tright nomargin" id="section-beneficios" href="#" data-scrollTo="#section-contrato">
+        <a class="button button-full button-dark center tright nomargin" id="section-beneficios" href="#"
+           data-scrollTo="#section-contrato">
             <div class="container clearfix">
-                ¿Te hemos convencido? Contratanos ahora <strong>55049384950</strong> <i class="icon-phone" style="top:4px;"></i>
+                ¿Te hemos convencido? Contratanos ahora <strong>55049384950</strong> <i class="icon-phone"
+                                                                                        style="top:4px;"></i>
             </div>
         </a>
 
         <div class="content-wrap nopadding">
-            <div class="section dark nomargin" style="background-image: url('<?php echo cdn_assets();?>images/testimonials/parallax.jpg'); background-attachment: fixed;">
+            <div class="section dark nomargin"
+                 style="background-image: url('<?php echo cdn_assets(); ?>images/footer-bg.jpg'); background-attachment: fixed;">
                 <div class="container clearfix">
 
                     <div class="col_one_fourth nobottommargin center" data-animate="bounceIn">
                         <i class="i-plain i-xlarge divcenter icon-line2-directions"></i>
-                        <div class="counter counter-lined"><span data-from="100" data-to="846" data-refresh-interval="50" data-speed="2000"></span>K+</div>
+                        <div class="counter counter-lined"><span data-from="100" data-to="846"
+                                                                 data-refresh-interval="50" data-speed="2000"></span>K+
+                        </div>
                         <h5>Autos asegurados</h5>
                     </div>
 
                     <div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="200">
                         <i class="i-plain i-xlarge divcenter nobottommargin icon-line2-graph"></i>
-                        <div class="counter counter-lined"><span data-from="3000" data-to="15360" data-refresh-interval="100" data-speed="2500"></span>+</div>
+                        <div class="counter counter-lined"><span data-from="3000" data-to="15360"
+                                                                 data-refresh-interval="100" data-speed="2500"></span>+
+                        </div>
                         <h5>Clientes satisfechos</h5>
                     </div>
 
                     <div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="400">
                         <i class="i-plain i-xlarge divcenter nobottommargin icon-line2-layers"></i>
-                        <div class="counter counter-lined">$<span data-from="10" data-to="358987" data-refresh-interval="25" data-speed="3500"></span></div>
+                        <div class="counter counter-lined">$<span data-from="10" data-to="358987"
+                                                                  data-refresh-interval="25" data-speed="3500"></span>
+                        </div>
                         <h5>Ahorro generado</h5>
                     </div>
 
                     <div class="col_one_fourth nobottommargin center col_last" data-animate="bounceIn" data-delay="600">
                         <i class="i-plain i-xlarge divcenter nobottommargin icon-line2-clock"></i>
-                        <div class="counter counter-lined"><span data-from="0" data-to="9" data-refresh-interval="1" data-speed="500"></span>+</div>
+                        <div class="counter counter-lined"><span data-from="0" data-to="9" data-refresh-interval="1"
+                                                                 data-speed="500"></span>+
+                        </div>
                         <h5>Aseguradoras afiliadas</h5>
                     </div>
 
@@ -266,10 +300,18 @@
                         <div class="col_two_third nobottommargin">
                             <div class="panel panel-danger">
                                 <div class="panel-body">
-                                    Si ya contrataste Seguros de autos en AhorraSeguros® y sufres cualquier evento que te ponga en riesgo a ti o a tu auto, ya sea un choque, colisión, robo de autoparte, etc.
-                                    Te brindamos los siguientes consejos: Conserva la calma, Ayuda a otras personas en caso de estar heridas, Avisa a las fuerzas de seguridad más cercanas, En caso de cualquier
-                                    tipo de robo evita cualquier riesgo y mantén la calma. Comunicate a AhorraSeguros® mantén a la mano tu número de póliza para reportar tu siniestro y nosotros trasladaremos
-                                    tu caso al área especialista en siniestros de la aseguradora con la que decidiste contratar tu seguro de auto, o de lo contrario ponte en contacto con los teléfonos que te
+                                    Si ya contrataste Seguros de autos en AhorraSeguros® y sufres cualquier evento que
+                                    te ponga en riesgo a ti o a tu auto, ya sea un choque, colisión, robo de autoparte,
+                                    etc.
+                                    Te brindamos los siguientes consejos: Conserva la calma, Ayuda a otras personas en
+                                    caso de estar heridas, Avisa a las fuerzas de seguridad más cercanas, En caso de
+                                    cualquier
+                                    tipo de robo evita cualquier riesgo y mantén la calma. Comunicate a AhorraSeguros®
+                                    mantén a la mano tu número de póliza para reportar tu siniestro y nosotros
+                                    trasladaremos
+                                    tu caso al área especialista en siniestros de la aseguradora con la que decidiste
+                                    contratar tu seguro de auto, o de lo contrario ponte en contacto con los teléfonos
+                                    que te
                                     proporcionaremos a continuación.
                                 </div>
                             </div>
@@ -378,7 +420,7 @@
             <div class="container clearfix">
 
                 <div class="col_two_third nobottommargin">
-                    <img src="<?php echo cdn_assets();?>images/footer-logo.png" alt="" class="footer-logo nomargin">
+                    <img src="<?php echo cdn_assets(); ?>images/footer-logo.png" alt="" class="footer-logo nomargin">
                     Copyrights © 2014 All Rights Reserved by Canvas Inc.
                 </div>
 
@@ -412,7 +454,34 @@
 ============================================= -->
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/jquery.js"></script>
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/plugins.js"></script>
+<script type="text/javascript" src="<?php echo cdn_assets(); ?>js/components/bs-select.js"></script>
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/functions.js"></script>
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/custom.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+            $("#marcas").on("changed.bs.select", function () {
+                var marca = $(this).val();
+                console.log(marca);
+                obtener_submarcas_por_marca(marca);
+            });
+        }
+    );
+
+    function obtener_submarcas_por_marca(marca) {
+        var my_url = '<?php echo base_url('landing/submarcas_por_marca/'); ?>' + marca;
+        $.get(
+            my_url
+        ).done(function (data) {
+            var $select = $('#submarcas');
+            $select.empty();
+            for (var idx in data) {
+                $select.append('<option value="' + data[idx].idmodelo + '">' + data[idx].nombre + '</option>');
+            }
+            $('.selectpicker').selectpicker('refresh');
+        }).fail(function () {
+            alert("Error al obtener las submarcas");
+        });
+    }
+</script>
 </body>
 </html>
