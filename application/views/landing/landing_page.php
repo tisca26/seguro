@@ -14,7 +14,6 @@
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
           rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="<?php echo cdn_assets(); ?>style.css" type="text/css"/>
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/dark.css" type="text/css"/>
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/font-icons.css" type="text/css"/>
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/animate.css" type="text/css"/>
@@ -23,6 +22,9 @@
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/custom.css" type="text/css"/>
 
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/components/bs-select.css" type="text/css"/>
+
+    <link rel="stylesheet" href="<?php echo cdn_assets(); ?>style.css" type="text/css"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 </head>
@@ -187,7 +189,7 @@
                                        class="form-control"/>
                             </div>
                             <div class="col_half col_last">
-                                <button class="btn btn-lg btn-block btn-success nomargin" value="submit" type="submit"
+                                <button class="btn btn-lg btn-block btn-primary nomargin" value="submit" type="submit"
                                         style="">Cotizar ahora
                                 </button>
                             </div>
@@ -218,25 +220,15 @@
                     </div>
                     <div class="col_one_third">
                         <p class="text-justify">
-                            Asegurar tu auto nunca había sido tan sencillo, fácil y a un costo accesible, en
-                            AhorraSeguros® Comparamos más de 19 aseguradoras por ti,
-                            te asesoramos desde la contratación de tu Seguro de auto y durante toda la vida de tu
-                            póliza. Estaremos para ti cuando necesites hacer un
-                            trámite o incluso ampliar tu cobertura. Siempre atendiéndote de manera personalizada y
-                            eficaz.
+                            Somos una empresa comprometida en brindar a nuestros asegurados la protección y seguridad que necesitan ante cualquier imprevisto que le ocurra a su automóvil. Tenemos alianza con las mejores 5 aseguradoras del país, para brindar el respaldo ante cualquier siniestro, además de contar con diversos planes para cubrir las necesidades de cada cliente a un costo accesible.
                         </p>
                     </div>
                     <div class="col_one_third center">
-                        <img src="<?php echo cdn_assets(); ?>images/landing/trato.png" class=""/>
+                        <img src="<?php echo cdn_assets(); ?>images/landing/trato.jpg" class=""/>
                     </div>
                     <div class="col_one_third col_last">
                         <p class="text-justify">
-                            Tomamos en cuenta tu edad, la zona donde circulas y los datos de tu auto para buscar las
-                            mejores opciones en Seguros de autos con los mejores
-                            planes y coberturas a un costo accesible. ¡Comparamos por ti 19 aseguradoras de auto de
-                            manera rápida y sencilla para que tú no lo hagas!
-                            Al Cotizar con AhorraSeguros® El mejor Cotizador de Seguros de Autos en México te ofrece los
-                            siguientes beneficios.
+                            Te asesoramos desde la cotización del seguro que mejor atienda a tus necesidades, cuando tengas un siniestro y durante toda la vida de la póliza para brindarte la asistencia que necesites.
                         </p>
                     </div>
                 </div>
@@ -399,7 +391,7 @@
                                        class="form-control"/>
                             </div>
                             <div class="col_half col_last">
-                                <button class="btn btn-lg btn-block btn-success nomargin" value="submit" type="submit"
+                                <button class="btn btn-lg btn-block btn-primary nomargin" value="submit" type="submit"
                                         style="">Cotizar ahora
                                 </button>
                             </div>
