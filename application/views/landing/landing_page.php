@@ -311,16 +311,19 @@
                         <div class="col_one_third col_last nobottommargin">
                             <div class="list-group">
                                 <a href="#" class="list-group-item">
-                                    <h4 class="nomargin">AXA Seguros <span>55483728394</span></h4>
+                                    <h4 class="nomargin">AXA Seguros <span>01 (800) 900 1292</span></h4>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <h4 class="nomargin">AXA Seguros <span>55483728394</span></h4>
+                                    <h4 class="nomargin">Qualitas<span>01 (800) 800 2880</span></h4>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <h4 class="nomargin">AXA Seguros <span>55483728394</span></h4>
+                                    <h4 class="nomargin">Mapfre <span>01 (800) 062 7373</span></h4>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <h4 class="nomargin">AXA Seguros <span>55483728394</span></h4>
+                                    <h4 class="nomargin">GNP Seguros <span>01 (800) 911 9000</span></h4>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="nomargin">HDI Seguros <span>01 (800) 0000 434</span></h4>
                                 </a>
                             </div>
                         </div>
