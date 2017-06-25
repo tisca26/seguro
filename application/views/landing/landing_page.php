@@ -209,8 +209,8 @@
                 <div class="container clearfix">
                     <h2 style="margin: 0px !important;">El mejor cotizador de seguros para autos</h2>
                     <span>Mejoramos cualquier cotización con las mejores aseguradoras del país. Somos la mejor opción para tu seguridad, comprueba nuestra calidad.</span>
-                    <br />
-                    <img src="<?php echo cdn_assets();?>images/landing/marcas.png">
+                    <br/>
+                    <img src="<?php echo cdn_assets(); ?>images/landing/marcas.png">
                 </div>
             </div>
 
@@ -221,7 +221,11 @@
                     </div>
                     <div class="col_one_third">
                         <p class="text-justify">
-                            Somos una empresa comprometida en brindar a nuestros asegurados la protección y seguridad que necesitan ante cualquier imprevisto que le ocurra a su automóvil. Tenemos alianza con las mejores 5 aseguradoras del país, para brindar el respaldo ante cualquier siniestro, además de contar con diversos planes para cubrir las necesidades de cada cliente a un costo accesible.
+                            Somos una empresa comprometida en brindar a nuestros asegurados la protección y seguridad
+                            que necesitan ante cualquier imprevisto que le ocurra a su automóvil. Tenemos alianza con
+                            las mejores 5 aseguradoras del país, para brindar el respaldo ante cualquier siniestro,
+                            además de contar con diversos planes para cubrir las necesidades de cada cliente a un costo
+                            accesible.
                         </p>
                     </div>
                     <div class="col_one_third center">
@@ -229,7 +233,9 @@
                     </div>
                     <div class="col_one_third col_last">
                         <p class="text-justify">
-                            Te asesoramos desde la cotización del seguro que mejor atienda a tus necesidades, cuando tengas un siniestro y durante toda la vida de la póliza para brindarte la asistencia que necesites.
+                            Te asesoramos desde la cotización del seguro que mejor atienda a tus necesidades, cuando
+                            tengas un siniestro y durante toda la vida de la póliza para brindarte la asistencia que
+                            necesites.
                         </p>
                     </div>
                 </div>
@@ -246,60 +252,63 @@
 
         <div class="content-wrap nopadding">
             <div class="section nomargin nobg">
-                <div class="col_one_fifth nobottommargin">
-                    <div class="feature-box fbox-center fbox-plain">
-                        <div class="fbox-icon">
-                            <a href="#"><i class="icon-clock i-alt"></i></a>
+                <div class="col-md-12">
+                    <div class="col_one_fifth nobottommargin">
+                        <div class="feature-box fbox-center fbox-plain">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-clock i-alt"></i></a>
+                            </div>
+                            <span>¿Te preocupa que tarden mucho en reparar tu vehiculo?</span>
+                            <br/><br/>
+                            <h3>Fecha Promesa de reparación</h3>
+                            <p>Tiempo de entrega garantizado, si la fecha de entrega prometida no se cumple,
+                                te decontamos un 20% del deducible por cada dia de atraso.</p>
                         </div>
-                        <span>¿Te preocupa que tarden mucho en reparar tu vehiculo?</span>
-                        <br/><br/>
-                        <h3>Fecha Promesa de reparación</h3>
-                        <p>Tiempo de entrega garantizado, si la fecha de entrega prometida no se cumple,
-                        te decontamos un 20% del deducible por cada dia de atraso.</p>
                     </div>
-                </div>
-                <div class="col_one_fifth nobottommargin">
-                    <div class="feature-box fbox-center fbox-plain">
-                        <div class="fbox-icon">
-                            <a href="#"><i class="icon-et-tools-2 i-alt"></i></a>
+                    <div class="col_one_fifth nobottommargin">
+                        <div class="feature-box fbox-center fbox-plain">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-et-tools-2 i-alt"></i></a>
+                            </div>
+                            <span>¿Te preocupa la calidad de la reparación?</span>
+                            <br/><br/>
+                            <h3>Calidad en hojalatería y pintura</h3>
+                            <p>Garantía en reparación por seis meses o 5,000 km en hojalatería y pintura después de la
+                                fecha de entrega del vehículo.</p>
                         </div>
-                        <span>¿Te preocupa la calidad de la reparación?</span>
-                        <br/><br/>
-                        <h3>Calidad en hojalatería y pintura</h3>
-                        <p>Garantía en reparación por seis meses o 5,000 km en hojalatería y pintura después de la fecha de entrega del vehículo.</p>
                     </div>
-                </div>
-                <div class="col_one_fifth nobottommargin">
-                    <div class="feature-box fbox-center fbox-plain">
-                        <div class="fbox-icon">
-                            <a href="#"><i class="icon-truck i-alt"></i></a>
+                    <div class="col_one_fifth nobottommargin">
+                        <div class="feature-box fbox-center fbox-plain">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-truck i-alt"></i></a>
+                            </div>
+                            <span>¿Chocaste? ¡Te llevamos a tu destino!</span>
+                            <br/><br/>
+                            <h3>Auto con chofer</h3>
+                            <p>Auto con chofer gratis el día del accidente para que puedas llegar a tu destino..</p>
                         </div>
-                        <span>¿Chocaste? ¡Te llevamos a tu destino!</span>
-                        <br/><br/>
-                        <h3>Auto con chofer</h3>
-                        <p>Auto con chofer gratis el día del accidente para que puedas llegar a tu destino..</p>
                     </div>
-                </div>
-                <div class="col_one_fifth nobottommargin">
-                    <div class="feature-box fbox-center fbox-plain">
-                        <div class="fbox-icon">
-                            <a href="#"><i class="icon-line-cog i-alt"></i></a>
+                    <div class="col_one_fifth nobottommargin">
+                        <div class="feature-box fbox-center fbox-plain">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-line-cog i-alt"></i></a>
+                            </div>
+                            <span>¿Prefieres reparar tu coche con tu mecánico?</span>
+                            <br/><br/>
+                            <h3>Pago en sitio</h3>
+                            <p>Te pagamos en el mismo lugar del accidente en siniestros de menos de $25,000.</p>
                         </div>
-                        <span>¿Prefieres reparar tu coche con tu mecánico?</span>
-                        <br/><br/>
-                        <h3>Pago en sitio</h3>
-                        <p>Te pagamos en el mismo lugar del accidente en siniestros de menos de $25,000.</p>
                     </div>
-                </div>
-                <div class="col_one_fifth col_last nobottommargin">
-                    <div class="feature-box fbox-center fbox-plain">
-                        <div class="fbox-icon">
-                            <a href="#"><i class="icon-line-circle-cross i-alt"></i></a>
+                    <div class="col_one_fifth col_last nobottommargin">
+                        <div class="feature-box fbox-center fbox-plain">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-line-circle-cross i-alt"></i></a>
+                            </div>
+                            <span>¿Tu auto fue pérdida total por daño o robo?</span>
+                            <br/><br/>
+                            <h3>Pago en 72 horas</h3>
+                            <p>Te pagamos en 72 horas la pérdida total al presentar toda la documentación.</p>
                         </div>
-                        <span>¿Tu auto fue pérdida total por daño o robo?</span>
-                        <br/><br/>
-                        <h3>Pago en 72 horas</h3>
-                        <p>Te pagamos en 72 horas la pérdida total al presentar toda la documentación.</p>
                     </div>
                 </div>
             </div>
@@ -354,9 +363,9 @@
                             <p><i class="icon-check"></i> Atención personalizada via Call Center</p>
                         </div>
                         <div class="col_one_third nobottommargin col_last">
-                    <p><i class="icon-check"></i> Multiples formas de pago</p>
-                    <p><i class="icon-check"></i> Asesores especializados en seguros</p>
-                </div>
+                            <p><i class="icon-check"></i> Multiples formas de pago</p>
+                            <p><i class="icon-check"></i> Asesores especializados en seguros</p>
+                        </div>
                     </div>
                 </div>
             </div>
