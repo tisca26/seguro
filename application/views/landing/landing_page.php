@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/components/bs-select.css" type="text/css"/>
 
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>style.css" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/colors.php" type="text/css"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -245,7 +246,7 @@
         </a>
 
         <div class="content-wrap nopadding">
-            <div class="section nomargin nobg">
+            <div class="section nomargin nobg" style="padding: 60px 20px;">
                 <div class="col_one_fifth nobottommargin">
                     <div class="feature-box fbox-center fbox-plain">
                         <div class="fbox-icon">
@@ -313,7 +314,7 @@
                     <div class="col_one_fourth nobottommargin">
                         <div class="feature-box fbox-center fbox-dark fbox-plain noborder">
                             <div class="fbox-icon">
-                                <a href="#"><img src=""></a>
+                                <a href="#"><img src="<?php echo cdn_assets();?>images/icons/grua.png"></a>
                             </div>
                             <p>Servicio de grua</p>
                         </div>
@@ -321,7 +322,7 @@
                     <div class="col_one_fourth nobottommargin">
                         <div class="feature-box fbox-center fbox-dark fbox-plain noborder">
                             <div class="fbox-icon">
-                                <a href="#"><img src=""></a>
+                                <a href="#"><img src="<?php echo cdn_assets();?>images/icons/bateria.png"></a>
                             </div>
                             <p>Paso de corriente</p>
                         </div>
@@ -329,7 +330,7 @@
                     <div class="col_one_fourth nobottommargin">
                         <div class="feature-box fbox-center fbox-dark fbox-plain noborder">
                             <div class="fbox-icon">
-                                <a href="#"><img src=""></a>
+                                <a href="#"><img src="<?php echo cdn_assets();?>images/icons/llanta.png"></a>
                             </div>
                             <p>Cambio de llantas</p>
                         </div>
@@ -337,7 +338,7 @@
                     <div class="col_one_fourth col_last nobottommargin">
                         <div class="feature-box fbox-center fbox-dark fbox-plain noborder">
                             <div class="fbox-icon">
-                                <a href="#"><img src=""></a>
+                                <a href="#"><img src="<?php echo cdn_assets();?>images/icons/oil.png"></a>
                             </div>
                             <p>Servicio de gasolina</p>
                         </div>
@@ -362,7 +363,7 @@
             </div>
         </div>
         <div class="content-wrap nopadding">
-            <div class="section dark nomargin"
+            <div class="section bgcolor nomargin dark"
                  style="background-image: url('<?php echo cdn_assets(); ?>images/footer-bg.jpg'); background-attachment: fixed;">
                 <div class="container clearfix">
 
@@ -432,7 +433,7 @@
                                     <h4 class="nomargin">AXA Seguros <span>01 (800) 900 1292</span></h4>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <h4 class="nomargin">Qualitas<span>01 (800) 800 2880</span></h4>
+                                    <h4 class="nomargin">Qualitas <span>01 (800) 800 2880</span></h4>
                                 </a>
                                 <a href="#" class="list-group-item">
                                     <h4 class="nomargin">Mapfre <span>01 (800) 062 7373</span></h4>
