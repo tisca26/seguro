@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/custom.css" type="text/css"/>
 
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/components/bs-select.css" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/components/datepicker.css" type="text/css"/>
 
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>style.css" type="text/css"/>
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/colors.php" type="text/css"/>
@@ -141,12 +142,15 @@
                                        value="" placeholder="Correo Electrónico*">
                             </div>
                             <div class="col_half">
-                                <input type="text" name="genero" class="form-control required input-lg not-dark"
-                                       value="" placeholder="Género*">
+                                <select name="genero" class="form-control required not-dark input-lg">
+                                    <option>-- Seleccione --</option>
+                                    <option value="FEMENINO">Femenino</option>
+                                    <option value="MASCULINO">Masculino</option>
+                                </select>
                             </div>
                             <div class="col_half col_last">
                                 <input type="text" name="nacimiento"
-                                       class="form-control required input-lg not-dark" value=""
+                                       class="form-control required input-lg not-dark format" value=""
                                        placeholder="Fecha de Nacimiento*">
                             </div>
                         </div>
@@ -461,7 +465,8 @@
 
             <div class="section nomargin" id="section-contrato">
                 <div class="container clearfix">
-                    <form action="<?php echo base_url('landing/enviar_contacto'); ?>" method="post" role="form" class="nobottommargin" id="form2">
+                    <form action="<?php echo base_url('landing/enviar_contacto'); ?>" method="post" role="form"
+                          class="nobottommargin" id="form2">
                         <div class="heading-block nobottommargin nobottomborder">
                             <h2>Cotiza ahora</h2>
                             <span>Llena los campos para solicitar una cotización</span><span>(* Campo Obligatorio)</span>
@@ -486,12 +491,15 @@
                                        value="" placeholder="Correo Electrónico*">
                             </div>
                             <div class="col_half">
-                                <input type="text" name="genero" class="form-control required input-lg not-dark"
-                                       value="" placeholder="Género*">
+                                <select name="genero" class="form-control required not-dark input-lg">
+                                    <option>-- Seleccione --</option>
+                                    <option value="FEMENINO">Femenino</option>
+                                    <option value="MASCULINO">Masculino</option>
+                                </select>
                             </div>
                             <div class="col_half col_last">
                                 <input type="text" name="nacimiento"
-                                       class="form-control required input-lg not-dark" value=""
+                                       class="form-control required input-lg not-dark format" value=""
                                        placeholder="Fecha de Nacimiento*">
                             </div>
                         </div>
@@ -570,7 +578,8 @@
                             <i class="icon-twitter"></i>
                             <i class="icon-twitter"></i>
                         </a>
-                        <a href="#" style="top:2px;position:relative; color: #AAA;"><i class="icon-phone"></i>55 5559 6120</a>
+                        <a href="#" style="top:2px;position:relative; color: #AAA;"><i class="icon-phone"></i>55 5559
+                            6120</a>
                     </div>
                 </div>
 
@@ -590,11 +599,19 @@
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/jquery.js"></script>
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/plugins.js"></script>
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/components/bs-select.js"></script>
+<script type="text/javascript" src="<?php echo cdn_assets(); ?>js/components/datepicker.js"></script>
+<script type="text/javascript" src="<?php echo cdn_assets(); ?>js/components/datepicker-es.js"></script>
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/functions.js"></script>
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/plugins/jquery.validation.js"></script>
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/custom.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
+            $('.format').datepicker({
+                language: 'es',
+                autoclose: true,
+                format: "yyyy-mm-dd"
+            });
+
             $("#marcas").on("changed.bs.select", function () {
                 var marca = $(this).val();
                 obtener_submarcas_por_marca(marca, '#submarcas');
