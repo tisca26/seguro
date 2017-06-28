@@ -48,4 +48,14 @@ class Marca
         $modelos = $this->modelos_todos();
         return json_encode($modelos);
     }
+
+    public function modelo_por_id($id = 0)
+    {
+        return $this->CI->modelos_model->modelo_por_id($id);
+    }
+
+    public function marca_por_id($id = 0)
+    {
+        return $this->CI->marcas_model->marca_por_id($id);
+    }
 }

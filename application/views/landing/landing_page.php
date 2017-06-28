@@ -11,7 +11,7 @@
 
     <!-- Stylesheets
     ============================================= -->
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
           rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/dark.css" type="text/css"/>
@@ -44,11 +44,9 @@
                 ============================================= -->
                 <div class="top-links">
                     <ul class="sf-js-enabled clearfix" style="touch-action: pan-y;">
-                        <?php echo top_lang_sel(); ?>
-                        <li><a href="faqs.html">FAQs</a></li>
-                        <li><a href="tel:+91.11.85412542"><span class="ts-icon"><i class="icon-call"></i></span><span
-                                        class="ts-text">+91.11.85412542</span></a></li>
-                        <li><a href="mailto:info@canvas.com"><span class="ts-icon"><span class="ts-text text-lowercase">info@canvas.com</span></a>
+                        <li><a href="tel:55 5559 6120"><span class="ts-icon"><i class="icon-call"></i></span><span
+                                        class="ts-text">55 5559 6120</span></a></li>
+                        <li><a href="mailto:info@canvas.com"><span class="ts-icon"><span class="ts-text text-lowercase">ventas@segurosparaautomoviles.com.mx</span></a>
                         </li>
                     </ul>
                 </div><!-- .top-links end -->
@@ -105,7 +103,7 @@
             </div>
         </div>
     </header>
-
+    <?php echo get_bootstrap_alert(); ?>
     <section id="slider"
              style="background: url('<?php echo cdn_assets(); ?>images/landing/auto.jpg'); background-position:center center; background-size: 2000px auto; overflow:visible;"
              data-height-lg="500" data-height-md="600" data-height-sm="600" data-height-xs="1200"
@@ -117,7 +115,7 @@
                 <div class="contact-form-result"></div>
 
                 <div class="col_full">
-                    <form action="include/landing-5.php" method="post" role="form"
+                    <form action="<?php echo base_url('landing/enviar_correo'); ?>" method="post" role="form"
                           class="landing-wide-form landing-form-overlay nobottommargin clearfix">
                         <div class="heading-block nobottommargin nobottomborder">
                             <h2 style="color: #FFF;">Cotiza ahora</h2>
@@ -126,39 +124,39 @@
                         <div class="line" style="margin: 20px 0 30px;"></div>
                         <div class="col_half">
                             <div class="col_half">
-                                <input type="text" name="landing-nombre" class="form-control required input-lg not-dark"
+                                <input type="text" name="nombre" class="form-control required input-lg not-dark"
                                        value="" placeholder="Nombre*">
                             </div>
                             <div class="col_half col_last">
-                                <input type="text" name="landing-apellidos"
+                                <input type="text" name="apellidos"
                                        class="form-control required input-lg not-dark" value=""
                                        placeholder="Apellidos*">
                             </div>
                             <div class="col_half">
-                                <input type="text" name="landing-tel" class="form-control required input-lg not-dark"
+                                <input type="text" name="tel" class="form-control required input-lg not-dark"
                                        value="" placeholder="Telefono*">
                             </div>
                             <div class="col_half col_last">
-                                <input type="email" name="landing-email" class="form-control required input-lg not-dark"
+                                <input type="email" name="email" class="form-control required input-lg not-dark"
                                        value="" placeholder="Correo Electrónico*">
                             </div>
                             <div class="col_half">
-                                <input type="text" name="landing-genero" class="form-control required input-lg not-dark"
-                                       value="" placeholder="Genero*">
+                                <input type="text" name="genero" class="form-control required input-lg not-dark"
+                                       value="" placeholder="Género*">
                             </div>
                             <div class="col_half col_last">
-                                <input type="email" name="landing-nacimiento"
+                                <input type="text" name="nacimiento"
                                        class="form-control required input-lg not-dark" value=""
                                        placeholder="Fecha de Nacimiento*">
                             </div>
                         </div>
                         <div class="col_half col_last">
                             <div class="col_half">
-                                <input type="text" name="landing-cp" class="form-control required input-lg not-dark"
+                                <input type="text" name="cp" class="form-control required input-lg not-dark"
                                        value="" placeholder="Codigo Postal*">
                             </div>
                             <div class="col_half col_last">
-                                <select class="selectpicker form-control required" name="landing-modelo"
+                                <select class="selectpicker form-control required" name="modelo"
                                         data-live-search="true" data-live-search-placeholder="Modelo (Año)*"
                                         data-size="5" title="Modelo (Año)*">
                                     <?php for ($i = 1980; $i <= date("Y") + 1; $i++): ?>
@@ -167,7 +165,7 @@
                                 </select>
                             </div>
                             <div class="col_half">
-                                <select class="selectpicker form-control required" name="landing-marca"
+                                <select class="selectpicker form-control required" name="marca"
                                         data-live-search="true" data-live-search-placeholder="Marca*"
                                         data-size="5" title="Marca*" id="marcas">
                                     <?php foreach ($marcas as $marca): ?>
@@ -176,18 +174,18 @@
                                 </select>
                             </div>
                             <div class="col_half col_last">
-                                <select class="selectpicker form-control required" name="landing-submarca"
+                                <select class="selectpicker form-control required" name="submarca"
                                         data-live-search="true" data-live-search-placeholder="Submarca*"
                                         data-size="5" title="Submarca*" id="submarcas">
                                     <option>-Seleccionar-</option>
                                 </select>
                             </div>
                             <div class="col_half">
-                                <input type="text" name="landing-version"
-                                       class="form-control required input-lg not-dark" value="" placeholder="Versión">
+                                <input type="text" name="version"
+                                       class="form-control input-lg not-dark" value="" placeholder="Versión">
                             </div>
                             <div class="col_full hidden">
-                                <input type="text" id="landing-botcheck" name="landing-botcheck" value=""
+                                <input type="text" id="botcheck" name="landing-botcheck" value=""
                                        class="form-control"/>
                             </div>
                             <div class="col_half col_last">
@@ -252,13 +250,6 @@
         </a>
 
         <div class="content-wrap nopadding">
-<<<<<<< HEAD
-            <div class="section nomargin nobg" style="padding: 60px 20px;">
-                <div class="col_one_fifth nobottommargin">
-                    <div class="feature-box fbox-center fbox-plain">
-                        <div class="fbox-icon">
-                            <a href="#"><i class="icon-clock i-alt"></i></a>
-=======
             <div class="section nomargin nobg">
                 <div class="col-md-12">
                     <div class="col_one_fifth nobottommargin">
@@ -271,7 +262,6 @@
                             <h3>Fecha Promesa de reparación</h3>
                             <p>Tiempo de entrega garantizado, si la fecha de entrega prometida no se cumple,
                                 te decontamos un 20% del deducible por cada dia de atraso.</p>
->>>>>>> origin/master
                         </div>
                     </div>
                     <div class="col_one_fifth nobottommargin">
@@ -331,7 +321,7 @@
                     <div class="col_one_fourth nobottommargin">
                         <div class="feature-box fbox-center fbox-dark fbox-plain noborder">
                             <div class="fbox-icon">
-                                <a href="#"><img src="<?php echo cdn_assets();?>images/icons/grua.png"></a>
+                                <a href="#"><img src="<?php echo cdn_assets(); ?>images/icons/grua.png"></a>
                             </div>
                             <p>Servicio de grua</p>
                         </div>
@@ -339,7 +329,7 @@
                     <div class="col_one_fourth nobottommargin">
                         <div class="feature-box fbox-center fbox-dark fbox-plain noborder">
                             <div class="fbox-icon">
-                                <a href="#"><img src="<?php echo cdn_assets();?>images/icons/bateria.png"></a>
+                                <a href="#"><img src="<?php echo cdn_assets(); ?>images/icons/bateria.png"></a>
                             </div>
                             <p>Paso de corriente</p>
                         </div>
@@ -347,7 +337,7 @@
                     <div class="col_one_fourth nobottommargin">
                         <div class="feature-box fbox-center fbox-dark fbox-plain noborder">
                             <div class="fbox-icon">
-                                <a href="#"><img src="<?php echo cdn_assets();?>images/icons/llanta.png"></a>
+                                <a href="#"><img src="<?php echo cdn_assets(); ?>images/icons/llanta.png"></a>
                             </div>
                             <p>Cambio de llantas</p>
                         </div>
@@ -355,7 +345,7 @@
                     <div class="col_one_fourth col_last nobottommargin">
                         <div class="feature-box fbox-center fbox-dark fbox-plain noborder">
                             <div class="fbox-icon">
-                                <a href="#"><img src="<?php echo cdn_assets();?>images/icons/oil.png"></a>
+                                <a href="#"><img src="<?php echo cdn_assets(); ?>images/icons/oil.png"></a>
                             </div>
                             <p>Servicio de gasolina</p>
                         </div>
@@ -363,17 +353,19 @@
                     <div class="clear"></div>
                     <br/><br/><br/>
                     <div class="row">
-                        <div class="col_one_third nobottommargin">
-                            <p><i class="icon-check"></i> Seguros al más bajo costo</p>
-                            <p><i class="icon-check"></i> + de 750,000 Asegurados en México</p>
-                        </div>
-                        <div class="col_one_third nobottommargin">
-                            <p><i class="icon-check"></i> Precios bajos garantizados</p>
-                            <p><i class="icon-check"></i> Atención personalizada via Call Center</p>
-                        </div>
-                        <div class="col_one_third nobottommargin col_last">
-                            <p><i class="icon-check"></i> Multiples formas de pago</p>
-                            <p><i class="icon-check"></i> Asesores especializados en seguros</p>
+                        <div class="col-md-12 text-center">
+                            <div class="col_one_third nobottommargin">
+                                <h4><i class="icon-check"></i> Seguros al más bajo costo</h4>
+                                <h4><i class="icon-check"></i> + de 750,000 Asegurados en México</h4>
+                            </div>
+                            <div class="col_one_third nobottommargin">
+                                <h4><i class="icon-check"></i> Precios bajos garantizados</h4>
+                                <h4><i class="icon-check"></i> Atención personalizada via Call Center</h4>
+                            </div>
+                            <div class="col_one_third nobottommargin col_last">
+                                <h4><i class="icon-check"></i> Multiples formas de pago</h4>
+                                <h4><i class="icon-check"></i> Asesores especializados en seguros</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -410,7 +402,7 @@
 
                     <div class="col_one_fourth nobottommargin center col_last" data-animate="bounceIn" data-delay="600">
                         <i class="i-plain i-xlarge divcenter nobottommargin icon-line2-clock"></i>
-                        <div class="counter counter-lined"><span data-from="0" data-to="9" data-refresh-interval="1"
+                        <div class="counter counter-lined"><span data-from="0" data-to="7" data-refresh-interval="1"
                                                                  data-speed="500"></span>+
                         </div>
                         <h5>Aseguradoras afiliadas</h5>
@@ -428,19 +420,19 @@
                         <div class="col_two_third nobottommargin">
                             <div class="panel panel-danger">
                                 <div class="panel-body">
-                                    Si ya contrataste Seguros de autos en AhorraSeguros® y sufres cualquier evento que
-                                    te ponga en riesgo a ti o a tu auto, ya sea un choque, colisión, robo de autoparte,
-                                    etc.
-                                    Te brindamos los siguientes consejos: Conserva la calma, Ayuda a otras personas en
-                                    caso de estar heridas, Avisa a las fuerzas de seguridad más cercanas, En caso de
-                                    cualquier
-                                    tipo de robo evita cualquier riesgo y mantén la calma. Comunicate a AhorraSeguros®
-                                    mantén a la mano tu número de póliza para reportar tu siniestro y nosotros
-                                    trasladaremos
-                                    tu caso al área especialista en siniestros de la aseguradora con la que decidiste
-                                    contratar tu seguro de auto, o de lo contrario ponte en contacto con los teléfonos
-                                    que te
-                                    proporcionaremos a continuación.
+                                    <div class="col-md-6">
+                                        <img src="<?php echo cdn_assets() ?>images/icons/siniestro.png" alt="Siniestros"
+                                             class="img-responsive">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5>Si sufres cualquier evento que ponga en riesto tu integridad y/o la de los
+                                            demás, ponte en contacto con los teléfonos que te proporcionamos y
+                                            recuerda:</h5>
+                                        <h5><i class="icon-ok-sign"></i> Conserva la calma </h5>
+                                        <h5><i class="icon-ok-sign"></i> Ayuda a personas heridas </h5>
+                                        <h5><i class="icon-ok-sign"></i> Localiza las autoridades competentes más
+                                            cercanas </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -469,8 +461,7 @@
 
             <div class="section nomargin" id="section-contrato">
                 <div class="container clearfix">
-                    <form action="include/landing-5.php" method="post" role="form"
-                          class="nobottommargin">
+                    <form action="<?php echo base_url('landing/enviar_contacto'); ?>" method="post" role="form" class="nobottommargin" id="form2">
                         <div class="heading-block nobottommargin nobottomborder">
                             <h2>Cotiza ahora</h2>
                             <span>Llena los campos para solicitar una cotización</span><span>(* Campo Obligatorio)</span>
@@ -478,60 +469,73 @@
                         <div class="line" style="margin: 20px 0 30px;"></div>
                         <div class="col_half">
                             <div class="col_half">
-                                <input type="text" name="landing-nombre" class="form-control required input-lg not-dark"
+                                <input type="text" name="nombre" class="form-control required input-lg not-dark"
                                        value="" placeholder="Nombre*">
                             </div>
                             <div class="col_half col_last">
-                                <input type="text" name="landing-apellidos"
+                                <input type="text" name="apellidos"
                                        class="form-control required input-lg not-dark" value=""
                                        placeholder="Apellidos*">
                             </div>
                             <div class="col_half">
-                                <input type="text" name="landing-tel" class="form-control required input-lg not-dark"
+                                <input type="text" name="tel" class="form-control required input-lg not-dark"
                                        value="" placeholder="Telefono*">
                             </div>
                             <div class="col_half col_last">
-                                <input type="email" name="landing-email" class="form-control required input-lg not-dark"
+                                <input type="email" name="email" class="form-control required input-lg not-dark"
                                        value="" placeholder="Correo Electrónico*">
                             </div>
                             <div class="col_half">
-                                <input type="text" name="landing-genero" class="form-control required input-lg not-dark"
-                                       value="" placeholder="Genero*">
+                                <input type="text" name="genero" class="form-control required input-lg not-dark"
+                                       value="" placeholder="Género*">
                             </div>
                             <div class="col_half col_last">
-                                <input type="email" name="landing-nacimiento"
+                                <input type="text" name="nacimiento"
                                        class="form-control required input-lg not-dark" value=""
                                        placeholder="Fecha de Nacimiento*">
                             </div>
                         </div>
                         <div class="col_half col_last">
                             <div class="col_half">
-                                <input type="text" name="landing-cp" class="form-control required input-lg not-dark"
+                                <input type="text" name="cp" class="form-control required input-lg not-dark"
                                        value="" placeholder="Codigo Postal*">
                             </div>
                             <div class="col_half col_last">
-                                <input type="text" name="landing-modelo" class="form-control required input-lg not-dark"
-                                       value="" placeholder="Modelo (Año)*">
+                                <select class="selectpicker form-control required" name="modelo"
+                                        data-live-search="true" data-live-search-placeholder="Modelo (Año)*"
+                                        data-size="5" title="Modelo (Año)*">
+                                    <?php for ($i = 1980; $i <= date("Y") + 1; $i++): ?>
+                                        <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                    <?php endfor; ?>
+                                </select>
                             </div>
                             <div class="col_half">
-                                <input type="text" name="landing-marca" class="form-control required input-lg not-dark"
-                                       value="" placeholder="Marca*">
+                                <select class="selectpicker form-control required" name="marca"
+                                        data-live-search="true" data-live-search-placeholder="Marca*"
+                                        data-size="5" title="Marca*" id="marcas2">
+                                    <?php foreach ($marcas as $marca): ?>
+                                        <option value="<?php echo $marca->idmarcas; ?>"><?php echo $marca->nombre; ?></option>
+                                    <?php endforeach; ?>
+                                </select>
                             </div>
                             <div class="col_half col_last">
-                                <input type="text" name="landing-submarca"
-                                       class="form-control required input-lg not-dark" value="" placeholder="Submarca*">
+                                <select class="selectpicker form-control required" name="submarca"
+                                        data-live-search="true" data-live-search-placeholder="Submarca*"
+                                        data-size="5" title="Submarca*" id="submarcas2">
+                                    <option>-Seleccionar-</option>
+                                </select>
                             </div>
                             <div class="col_half">
-                                <input type="text" name="landing-version"
-                                       class="form-control required input-lg not-dark" value="" placeholder="Versión">
+                                <input type="text" name="version"
+                                       class="form-control input-lg not-dark" value="" placeholder="Versión">
                             </div>
                             <div class="col_full hidden">
-                                <input type="text" id="landing-botcheck" name="landing-botcheck" value=""
+                                <input type="text" id="landing-botcheck2" name="botcheck" value=""
                                        class="form-control"/>
                             </div>
                             <div class="col_half col_last">
                                 <button class="btn btn-lg btn-block btn-primary nomargin" value="submit" type="submit"
-                                        style="">Cotizar ahora
+                                        id="submit_contacto" style="">Cotizar ahora
                                 </button>
                             </div>
                         </div>
@@ -552,7 +556,7 @@
 
                 <div class="col_two_third nobottommargin">
                     <img src="<?php echo cdn_assets(); ?>images/footer-logo.png" alt="" class="footer-logo nomargin">
-                    Copyrights © 2014 All Rights Reserved by Canvas Inc.
+                    Copyrights © 2017 Seguros Para Autos.
                 </div>
 
                 <div class="col_one_third col_last tright nobottommargin">
@@ -566,7 +570,7 @@
                             <i class="icon-twitter"></i>
                             <i class="icon-twitter"></i>
                         </a>
-                        <a href="#" style="top:2px;position:relative; color: #AAA;"><i class="icon-phone"></i>4938493849</a>
+                        <a href="#" style="top:2px;position:relative; color: #AAA;"><i class="icon-phone"></i>55 5559 6120</a>
                     </div>
                 </div>
 
@@ -587,26 +591,37 @@
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/plugins.js"></script>
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/components/bs-select.js"></script>
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/functions.js"></script>
+<script type="text/javascript" src="<?php echo cdn_assets(); ?>js/plugins/jquery.validation.js"></script>
 <script type="text/javascript" src="<?php echo cdn_assets(); ?>js/custom.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
             $("#marcas").on("changed.bs.select", function () {
                 var marca = $(this).val();
-                console.log(marca);
-                obtener_submarcas_por_marca(marca);
+                obtener_submarcas_por_marca(marca, '#submarcas');
             });
+            $("#marcas2").on("changed.bs.select", function () {
+                var marca = $(this).val();
+                obtener_submarcas_por_marca(marca, '#submarcas2');
+            });
+
+            $('#submit_contacto').click(function () {
+                $(this).html('Cargando...');
+                return true;
+            });
+
+            $('#form2').validate();
         }
     );
 
-    function obtener_submarcas_por_marca(marca) {
+    function obtener_submarcas_por_marca(marca, elem) {
         var my_url = '<?php echo base_url('landing/submarcas_por_marca/'); ?>' + marca;
         $.get(
             my_url
         ).done(function (data) {
-            var $select = $('#submarcas');
+            var $select = $(elem);
             $select.empty();
             for (var idx in data) {
-                $select.append('<option value="' + data[idx].idmodelo + '">' + data[idx].nombre + '</option>');
+                $select.append('<option value="' + data[idx].idmodelos + '">' + data[idx].nombre + '</option>');
             }
             $('.selectpicker').selectpicker('refresh');
         }).fail(function () {
