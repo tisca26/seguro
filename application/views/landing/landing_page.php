@@ -3,10 +3,10 @@
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title><?php echo trans_line('title_tag'); ?></title>
+    <title>Seguros Para Automóviles | Aseguradora de Automóviles</title>
 
-    <meta name="keywords" content="<?php echo trans_line('metatag_keywords'); ?>"/>
-    <meta name="description" content="<?php echo trans_line('metatag_desc'); ?>">
+    <meta name="keywords" content="seguros para automóviles, seguros para autos, aseguradora, seguros baratos"/>
+    <meta name="description" content="Seguros para automóviles al mejor precio, seguros para automoviles baratos.">
     <meta name="author" content="icognitis.com">
 
     <!-- Stylesheets
@@ -119,8 +119,8 @@
                     <form action="<?php echo base_url('landing/enviar_correo'); ?>" method="post" role="form"
                           class="landing-wide-form landing-form-overlay nobottommargin clearfix">
                         <div class="heading-block nobottommargin nobottomborder">
-                            <h2 style="color: #FFF;">Cotiza ahora</h2>
-                            <span style="color: #FFF;">Llena los campos para solicitar <br>una cotización (* Campo Obligatorio)</span>
+                            <h2 style="color: #FFF;">Seguros para automóviles</h2>
+                            <span style="color: #FFF;">Llena los campos para solicitar una cotización (* Campo Obligatorio)</span>
                         </div>
                         <div class="line" style="margin: 20px 0 30px;"></div>
                         <div class="col_half">
@@ -656,5 +656,18 @@
     ga('send', 'pageview');
 
 </script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/595582a5e9c6d324a4738081/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>
