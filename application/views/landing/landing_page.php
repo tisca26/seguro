@@ -13,6 +13,9 @@
     ============================================= -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
           rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="<?php echo cdn_assets(); ?>style.css" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/colors.php" type="text/css"/>
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/dark.css" type="text/css"/>
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/font-icons.css" type="text/css"/>
@@ -24,9 +27,6 @@
 
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/components/bs-select.css" type="text/css"/>
     <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/components/datepicker.css" type="text/css"/>
-
-    <link rel="stylesheet" href="<?php echo cdn_assets(); ?>style.css" type="text/css"/>
-    <link rel="stylesheet" href="<?php echo cdn_assets(); ?>css/colors.php" type="text/css"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
